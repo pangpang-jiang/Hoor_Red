@@ -4,8 +4,7 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(scu)
 
 include_directories(
-                    ../../oslib/scu_drivers/scu_sensors
-                    ../../oslib/scu_drivers/scu_hci
+                    scu_sensors
                     src
 )
 
@@ -13,6 +12,5 @@ include_directories(
 FILE(GLOB app_sources src/*.c)
 target_sources(app PRIVATE 
                         src/main.c
-                        ../../oslib/scu_drivers/scu_sensors/scu_sensors.c
-                        ../../oslib/scu_drivers/scu_hci/scu_hci.c
+                        scu_sensors/scu_sensors.c
 )
