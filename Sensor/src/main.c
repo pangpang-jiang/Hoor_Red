@@ -8,7 +8,6 @@
 #include <zephyr/sys/util.h>
 #include <inttypes.h>
 #include <scu_sensors.h>
-#include <scu_hci.h>
 #include <zephyr/drivers/pwm.h>
 #include <zephyr/sys_clock.h>
 #include <limits.h>
